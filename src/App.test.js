@@ -15,3 +15,7 @@ test('Main Component Heading', () => {
   expect(Counter).toBeInTheDocument()
   expect(Counter).toHaveTextContent('Counter :0')
 })
+
+test('Demo test', () => {
+  expect(1).toBe(2)
+})
