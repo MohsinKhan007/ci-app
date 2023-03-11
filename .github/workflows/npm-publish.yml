@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - run: npm i && docker build -t mohsinwaseem65/ci && npm run test:ci
+      - run: npm i &&  npm run test:ci && docker build -t mohsinwaseem65/ci .
       - run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
         env:
           $DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
