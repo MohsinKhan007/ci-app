@@ -1,9 +1,9 @@
 import { render, screen } from '@testing-library/react'
 
-import MainConponent from './Components/MainConponent'
+import App from './App'
 
 test('Main Component Heading', () => {
-  render(<MainConponent />)
+  render(<App />)
 
   const Heading = screen.getByTestId('Heading')
 
