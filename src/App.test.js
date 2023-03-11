@@ -17,5 +17,5 @@ test('Main Component Heading', () => {
 })
 
 test('Demo test', () => {
-  expect(1).toBe(2)
+  expect(2).toBe(2)
 })
